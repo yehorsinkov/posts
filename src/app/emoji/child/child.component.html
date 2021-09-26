@@ -1,0 +1,9 @@
+<ng-content></ng-content>
+<div class="animal"> Наш любимый питомец - {{ animalService.emoji}}</div>
+<app-grand-child appCat></app-grand-child>
+
+
+
+<ol>
+    <li *ngFor="let animal of zooList"> {{ animal.emoji }}</li>
+</ol>

@@ -1,0 +1,17 @@
+<div id="container">
+    <!-- <h4>Stream todoItems$</h4> -->
+    <div *ngIf="updatedAt$ | async" [ngStyle]="elementStyles" >
+        Обновлялось {{ updatedAt$ | async | date:"HH:mm:ss dd/MM/yyyy"}}
+    </div>
+    <ul>
+        <li *ngFor="let todo of todoItems$ | async">
+            <!-- with EventEmitter
+                <app-todo-item [todo]="todo" (counterChanged)=decrementCounter() (removeTodoById)="removeTodo(todo.id)"></app-todo-item>
+            -->
+            <!-- //withOUT EventEmitter and use STORE 
+            -->
+            <app-todo-item [todo]="todo"></app-todo-item>
+        </li>
+    </ul>
+    <app-todo-counter  [counterValue]="counter"></app-todo-counter>
+</div>

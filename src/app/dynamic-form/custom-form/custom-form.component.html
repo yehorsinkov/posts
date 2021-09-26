@@ -1,0 +1,6 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="field-item" *ngFor="let field of fields">
+        <ng-container dynamicField [config]="field" [group]="form"></ng-container>
+    </div>
+    <button mat-raised-button color="primary">Primary</button>
+</form>

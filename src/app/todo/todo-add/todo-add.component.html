@@ -1,0 +1,11 @@
+<div id="container">
+    <form [formGroup]="form" novalidate (ngSubmit)="addTodoItem()">
+
+        <label for="todo-title">Title: </label>
+        <input id="todo-title" type="text" formControlName="newTodoTitle" minlength="10" maxlength="30" />
+        <button class="btn btn-default" [disabled]="form.invalid">
+            Add
+        </button>
+    </form>
+
+</div>

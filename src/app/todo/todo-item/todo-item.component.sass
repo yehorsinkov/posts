@@ -1,0 +1,25 @@
+:host
+    display: flex
+    justify-content: space-between
+    padding: 20px 0
+    border-bottom: 1px solid black   
+    .item
+        text-overflow: ellipsis
+        overflow: hidden
+        width: 80%
+        &-id
+            margin-right: 10px
+        &-title
+            font-size: 20px
+    button
+        background: transparent
+        cursor: pointer
+    button:hover
+        background-color: red
+    .addBtn
+        border-radius: 50%
+        width: 25px
+        height: 25px
+        
+:host(.active)
+  border-width: 3px

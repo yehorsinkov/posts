@@ -1,0 +1,29 @@
+<header>
+  <h2 class="caption_border">Todo application</h2>
+  <hr />
+  <nav>
+    <ul>
+      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+      <li><a routerLink="/todo" routerLinkActive="active">Todo</a></li>
+      <li><a routerLink="/form" routerLinkActive="active">Form</a></li>
+      <li><a routerLink="/users" routerLinkActive="active">Users</a></li>
+      <li>
+        <a routerLink="/google-maps" routerLinkActive="active">Google Maps</a>
+      </li>
+      <li>
+        <a routerLink="/hightcharts" routerLinkActive="active">Hightcharts</a>
+      </li>
+      <li>
+        <a routerLink="/injection" routerLinkActive="active">Injection</a>
+      </li>
+      <li><a routerLink="/emoji" routerLinkActive="active">Emoji</a></li>
+    </ul>
+  </nav>
+  <hr />
+</header>
+<div id="container">
+  <router-outlet></router-outlet>
+</div>
+<hr />
+<footer>Footer of application</footer>
+<hr />

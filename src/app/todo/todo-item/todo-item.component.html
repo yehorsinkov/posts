@@ -1,0 +1,6 @@
+<input type='checkbox' [checked]="todo.completed">
+<div class="item">
+    <span class="item-id">{{ todo.id }}</span>
+    <span class="item-title">{{ todo.title }}</span>
+</div>
+<button class="addBtn" (click)="removeTodo(todo.id)">&times;</button>
